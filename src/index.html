@@ -10,8 +10,10 @@
 
   <body> 
     <!-- class="min-h-screen grid place-content-center" to center all text --> 
-	<script src="index.js"></script>
+	
   <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="index.js"></script>
+  <!-- <script type="module" src="../node_modules/flowbite/dist/flowbite.js"></script> -->
 
     
     <!-- REMEMBER TO CHANGE FOR NIGHT MODE! -->
@@ -93,14 +95,269 @@
   
     
     <section class = "p-8 md:max-w-[70em] mx-[auto] my-[128px] font-[helvetica]0" id="experience">
-      
-      <h1 class="font-playfair text-5xl text-sky-900 leading-[170%]">Experience</h1>
-      <div class="text-l">
-        <!-- <h3>Software Development Experience</h3>
-        <h3>Leadership Experience</h3>
-        <h3>Business Experience</h3> -->
-        <p>Under Construction</p>
-      </div>
+      <br>
+      <br>
+      <h1 class="font-playfair text-5xl text-sky-900 leading-[170%] text-center">Experience</h1>
+      <div class="text-l font-[helvetica] leading-normal">
+        <h3 class="text-xl font-bold font-playfair text-sky-600">Software Development</h3>
+        <p>Building & tinkering.</p>
+        <br>
+
+        <div id="accordion-flush" data-accordion="open" data-active-classes="bg-white dark:bg-gray-900 text-sky-600 dark:text-white" data-inactive-classes="text-black dark:text-gray-400">
+          <h2 id="accordion-flush-heading-1">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+              <span class="text-left">
+                <p class="italic">Research Intern</p>
+                <p class="font-bold">International Research Institute for Climate & Society</p>
+                <p class="border-3">September 2023 - May 2024</p>
+              </span>
+              
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+              
+            </button>
+          </h2>
+          <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">New York, NY</p>
+              <p >- Created a statistical forecast with area yield data to improve weather insurance for farmers in Malawi, improving upon currently inequitable and variable insurance calculation mechanisms</p>
+              <p >- Deployed interactive web applications, using R Shiny and Python, for outreach programs with 5+ local non-profits and governments; worked with a team of 10 researchers (masters & PhD students)</p>
+              <!-- <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> -->
+            </div>
+          </div>
+
+
+          <h2 id="accordion-flush-heading-2">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+              <span class="text-left">
+                <p class="italic">Software Engineering Intern</p>
+                <p class="font-bold">Laansu Incorporated</p>
+                <p class="border-3">June - August 2023</p>
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">Sterling, VA</p>
+              <p >- Developed a framework to process car accident reports from the National Highway Traffic Safety Administration, using C# and .NET, contributing to increased efficiency and accuracy of accident documentation</p>
+              <p >- Created an API utilizing computer vision techniques to extract and verify requested information from hundreds of documents, streamlining the data collection process and improving processes by 30%</p>
+              <!-- <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> -->
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-3">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+              <span class="text-left">
+                <p class="italic">Extern</p>
+                <p class="font-bold">Cisco</p>
+                <p class="border-3">June - July 2022</p>
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">Herndon, VA</p>
+              <p >- Led final project to streamline the freight supply chain with a train stoppage detection system & shipping crate tracking</p>
+              <p >- Learned from Cisco professionals on topics including IoT systems, cybersecurity, and sustainability-focused technology</p>
+              <!-- <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> -->
+            </div>
+          </div>
+        </div>
+        <br>
+        
+        <h3 class="text-xl font-bold font-playfair text-sky-600">Business Experience</h3>
+        <p>Venture capital and consulting - working with founders and companies to build great experiences.</p>
+        <br>
+
+        <div id="accordion-flush3" data-accordion="open" data-active-classes="bg-white dark:bg-gray-900 text-sky-600 dark:text-white" data-inactive-classes="text-black dark:text-gray-400">
+          <h2 id="accordion-flush3-heading-1">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush3-body-1" aria-expanded="false" aria-controls="accordion-flush3-body-1">
+              <span class="text-left">
+                <p class="italic">Research Analyst Intern</p>
+                <p class="font-bold">Textbook Ventures</p>
+                <p class="border-3">January 2024 - Present</p>
+              </span>
+              
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+              
+            </button>
+          </h2>
+          <div id="accordion-flush3-body-1" class="hidden" aria-labelledby="accordion-flush3-heading-1">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">New York, NY</p>
+              <p >- Organized inaugural central repository of information for new entrepreneurs navigating the NYC startup ecosystem, focusing on 50+ venture accelerator programs and interviews with entrepreneurs and venture capitalists</p>
+              <p >- Evaluated investments & wrote deal memos; worked alongside managing partners to research AI and SAAS industries</p>
+            
+              <!-- <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> -->
+            </div>
+          </div>
+
+
+          <h2 id="accordion-flush3-heading-2">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush3-body-2" aria-expanded="false" aria-controls="accordion-flush3-body-2">
+              <span class="text-left">
+                <p class="italic">Consultant</p>
+                <p class="font-bold">JUV Consulting</p>
+                <p class="border-3">June 2022 - March 2024</p>
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-flush3-body-2" class="hidden" aria-labelledby="accordion-flush3-heading-2">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">New York, NY</p>
+              <p >- Consulted Fortune 500 companies on Generation-Z engagement, with a focus on social media and product launch campaigns</p>
+              <p >- Ideated & directed client deliverables (trend reports, influencer campaigns, seasonal campaigns, art installations)</p>
+              <!-- <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> -->
+            </div>
+          </div>
+          <!-- <h2 id="accordion-flush3-heading-3">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush3-body-3" aria-expanded="false" aria-controls="accordion-flush3-body-3">
+              <span class="text-left">
+                <p class="italic">Extern</p>
+                <p class="font-bold">Cisco</p>
+                <p class="border-3">June - July 2022</p>
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-flush3-body-3" class="hidden" aria-labelledby="accordion-flush3-heading-3">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">Herndon, VA</p>
+              <p >- Led final project to streamline the freight supply chain with a train stoppage detection system & shipping crate tracking</p>
+              <p >- Learned from Cisco professionals on topics including IoT systems, cybersecurity, and sustainability-focused technology</p>
+              
+            </div>
+          </div> -->
+        </div>
+        <br>
+       
+        <h3 class="text-xl font-bold font-playfair text-sky-600">Leadership Experience</h3>
+        <p>Working within the intersection of social impact and technology.</p>
+        <br>
+
+        <div id="accordion-flush2" data-accordion="open" data-active-classes="bg-white dark:bg-gray-900 text-sky-600 dark:text-white" data-inactive-classes="text-black dark:text-gray-400">
+          <h2 id="accordion-flush2-heading-1">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush2-body-1" aria-expanded="false" aria-controls="accordion-flush2-body-1">
+              <span class="text-left">
+                <p class="italic">Director of Finance</p>
+                <p class="font-bold">Climate Cardinals</p>
+                <p class="border-3">June 2023 - Present</p>
+              </span>
+              
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+              
+            </button>
+          </h2>
+          <div id="accordion-flush2-body-1" class="hidden" aria-labelledby="accordion-flush2-heading-1">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">Mclean, VA (Remote)</p>
+              <p >- Managed a six-figure annual budget; coordinated $200,000+ in grant-giving; led team of 10 deputy directors</p>
+              <p >- Facilitated translation and fiscal partnerships with United Nations Environment Programme (UNEP), the UN Children's Fund (UNICEF), Condé Nast, Yale Climate Connections</p>
+              <p >- Reached 10,000+ volunteers in 80+ countries, Forbes 30 under 30 non-profit</p>
+            </div>
+          </div>
+
+
+          <h2 id="accordion-flush2-heading-2">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush2-body-2" aria-expanded="false" aria-controls="accordion-flush2-body-2">
+              <span class="text-left">
+                <p class="italic">Representative for Information & Technology</p>
+                <p class="font-bold">Barnard SGA</p>
+                <p class="border-3">May 2024 - Present</p>
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-flush2-body-2" class="hidden" aria-labelledby="accordion-flush2-heading-2">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">New York, NY</p>
+              <p >- Elected from college-wide student government elections</p>
+              <p>- Served as point of contact for technology and information accessibility on campus</p>
+              <p >- Communicated with counterparts from other Columbia undergraduate colleges and key Barnard technology and information offices (including Barnard Library, Information Technology, Computer Science Department)</p>
+            </div>
+          </div>
+          <h2 id="accordion-flush2-heading-3">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush2-body-3" aria-expanded="false" aria-controls="accordion-flush2-body-3">
+              <span class="text-left">
+                <p class="italic">Executive Director</p>
+                <p class="font-bold">The InvestHer Initiative</p>
+                <p class="border-3">June 2020 - October 2023</p>
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-flush2-body-3" class="hidden" aria-labelledby="accordion-flush2-heading-3">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">Fairfax, VA</p>
+              <p >- Oversaw 65-member team to organize business and financial literacy programs, reached 20,000+ students</p>
+              <p>- Created financial literacy curriculum implemented in schools with 50+ students and 10+ student teachers</p>
+              <p >- Raised $6,000+ in funding from grants and social media fundraisers</p>
+            </div>
+          </div>
+          <!-- <h2 id="accordion-flush2-heading-4">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush2-body-4" aria-expanded="false" aria-controls="accordion-flush2-body-4">
+              <span class="text-left">
+                <p class="italic">Girl Advisory Board Member</p>
+                <p class="font-bold">Girl Scouts Nation's Capital</p>
+                <p class="border-3">September 2021 - June 2023</p>
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-flush2-body-4" class="hidden" aria-labelledby="accordion-flush2-heading-4">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">Washington DC</p>
+              <p >- Selected from and represented over 60,000 Girl Scouts in the DC Metropolitan Area</p>
+              <p >- Advised Girl Scouts Nation's Capital Board of Directors with youth opinions on programming</p>
+              <p >- Led research projects of personal choice, with a focus on DEI (Diversity, Equity, and Inclusion) efforts and STEM education</p>
+            </div>
+          </div> -->
+
+          <h2 id="accordion-flush2-heading-5">
+            <button type="button" class="flex items-center justify-between w-full py-2 font-medium rtl:text-right text-black border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush2-body-5" aria-expanded="false" aria-controls="accordion-flush2-body-5">
+              <span class="text-left">
+                <p class="italic">Chief of Strategic Partnerships</p>
+                <p class="font-bold">Dear Asian Youth</p>
+                <p class="border-3">June 2021 - March 2023</p>
+              </span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-flush2-body-5" class="hidden" aria-labelledby="accordion-flush2-heading-4">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 mb-2 text-gray-500 dark:text-gray-400">
+              <p class="font-bold">Remote</p>
+              <p >- Led successful grant proposals for over $400,000 in grants to increase access to equitable education</p>
+              <p >- Directed financial reporting and accounting efforts, established educational program for finance managers</p>
+              <p >- Established partnerships with major foundations and corporations, including Zoom, Walmart, and Snapchat for grant-giving</p>
+              <!-- <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> -->
+            </div>
+          </div>
+        </div>
+        <br>
+
     
       
     </section>
