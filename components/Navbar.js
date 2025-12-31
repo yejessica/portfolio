@@ -1,67 +1,45 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
+  const pathname = usePathname()
+  
   return (
-    <nav className="bg-white dark:bg-gray-900 mx-[auto] fixed w-full z-20 top-0 start-0 border-b border-gray-200 text-l">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Image src="/img/logo.svg" className="h-10" alt="JY Logo" width={40} height={40} />
-        </Link>
-        <div className="flex md:order-2 space-x-3 md:space-x-2 rtl:space-x-reverse">
-          <a href="https://github.com/yejessica/" className="flex items-center space-x-3 rtl:space-x-reverse" target="_blank" rel="noopener noreferrer">
-            <Image src="/img/github.svg" className="h-10" alt="Github Logo" width={40} height={40} />
-          </a>
-          <a href="https://www.linkedin.com/in/jjessicaye/" className="flex items-center space-x-3 rtl:space-x-reverse" target="_blank" rel="noopener noreferrer">
-            <Image src="/img/linkedin.svg" className="h-10" alt="LinkedIn Logo" width={40} height={40} />
-          </a>
-          <a href="mailto:jmy2134@barnard.edu">
-            <button type="button" className="h-10 text-white bg-sky-900 hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-6 py-2 text-center text-l">
-              Contact
-            </button>
-          </a>
-          
-          <button 
-            data-collapse-toggle="navbar-sticky" 
-            type="button" 
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" 
-            aria-controls="navbar-sticky" 
-            aria-expanded="false"
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-          </button>
+    <div className="backdrop-blur-[25px] backdrop-filter bg-[rgba(224,242,254,0.38)] border border-[rgba(245,245,245,0.2)] border-solid flex gap-[5px] items-center justify-center overflow-clip p-[10px] relative rounded-[50px] shadow-[0px_4px_30px_0px_rgba(0,0,0,0.08)] w-[550px] mx-auto">
+      <Link 
+        href="/" 
+        className={`basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[10px] relative rounded-[50px] shrink-0 ${
+          pathname === '/' 
+            ? 'backdrop-blur-[25px] backdrop-filter bg-[rgba(248,252,255,0.25)] border border-[rgba(245,245,245,0.2)] border-solid shadow-[0px_4px_30px_0px_rgba(0,0,0,0.08)] relative' 
+            : ''
+        }`}
+      >
+        <div className="flex flex-col font-manrope font-normal justify-center leading-[0] relative shrink-0 text-[#61849c] text-[20px] text-center text-nowrap">
+          <p className="leading-[35px]">home</p>
         </div>
-        <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <Link href="/" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-sky-600 md:hover:bg-transparent md:hover:text-bg-sky-600 md:p-0 md:dark:hover:text-bg-sky-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/#experience" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-sky-600 md:hover:bg-transparent md:hover:text-bg-sky-600 md:p-0 md:dark:hover:text-bg-sky-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link href="/#projects" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-sky-600 md:hover:bg-transparent md:hover:text-bg-sky-600 md:p-0 md:dark:hover:text-bg-sky-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link href="/#skills" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 hover:text-sky-600 md:hover:bg-transparent md:hover:text-bg-sky-600 md:p-0 md:dark:hover:text-bg-sky-600 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                Skills
-              </Link>
-            </li>
-          </ul>
+        {pathname === '/' && (
+          <div className="absolute inset-0 pointer-events-none shadow-[inset_0px_-4px_10px_0px_rgba(213,212,212,0.27)]" />
+        )}
+      </Link>
+      <Link 
+        href="/#experience" 
+        className="basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[10px] relative rounded-[50px] shrink-0"
+      >
+        <div className="flex flex-col font-manrope font-normal justify-center leading-[0] relative shrink-0 text-[#61849c] text-[20px] text-center text-nowrap">
+          <p className="leading-[35px]">experience</p>
         </div>
-      </div>
-    </nav>
+      </Link>
+      <Link 
+        href="/#contact" 
+        className="basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[10px] relative rounded-[50px] shrink-0"
+      >
+        <div className="flex flex-col font-manrope font-normal justify-center leading-[0] relative shrink-0 text-[#61849c] text-[20px] text-center text-nowrap">
+          <p className="leading-[35px]">contact</p>
+        </div>
+      </Link>
+      <div className="absolute inset-0 pointer-events-none shadow-[inset_0px_-4px_10px_0px_rgba(213,212,212,0.2)]" />
+    </div>
   )
 }
-
