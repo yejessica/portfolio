@@ -11,7 +11,10 @@ module.exports = {
       fontFamily:{
         editorial: ["Editorial Today", "serif"],
         playfair: ["Playfair Display", "serif"],
-        inter: ["Inter", "sans-serif"]
+        inter: ["Inter", "sans-serif"],
+        manrope: ["var(--font-manrope)", "sans-serif"],
+        "editorial-new": ["PP Editorial New", "serif"],
+        "league-script": ["var(--font-league-script)", "cursive"]
       }
     },
   },
