@@ -15,6 +15,19 @@ module.exports = {
         manrope: ["var(--font-manrope)", "sans-serif"],
         "editorial-new": ["PP Editorial New", "serif"],
         "league-script": ["var(--font-league-script)", "cursive"]
+      },
+      colors: {
+        'portfolio-blue': {
+          primary: '#195b87',
+          secondary: '#3d7ba4',
+          light: '#61849c',
+          lighter: '#6394b6',
+          'name-blue': '#114a70',
+        },
+        'portfolio-bg': {
+          start: '#fbfbfc',
+          end: '#d3e6f2',
+        }
       }
     },
   },
