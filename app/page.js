@@ -350,9 +350,41 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Contact Section - Placeholder for now */}
+      {/* Contact Section */}
       <div className="bg-[#3d7ba4] content-stretch flex items-center justify-between overflow-clip px-[80px] py-[50px] relative shrink-0 w-full" id="contact">
-        <p className="text-white">Contact section coming next...</p>
+        <div className="content-stretch flex flex-col items-center justify-center relative shrink-0">
+          <div className="flex flex-col font-league-script justify-center leading-[0] not-italic relative shrink-0 text-[160px] text-white w-[890px]">
+            <p className="leading-[normal]">Contact</p>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[20px] items-start relative shrink-0">
+          <div className="content-stretch flex flex-col font-manrope font-extrabold gap-[8px] items-end justify-end leading-[0] relative shrink-0 text-[24px] text-nowrap text-white uppercase">
+            <div className="flex flex-col justify-center relative shrink-0">
+              <p className="leading-[normal] text-nowrap">Email</p>
+            </div>
+            <div className="flex flex-col justify-center relative shrink-0">
+              <p className="leading-[normal] text-nowrap">LinkedIn</p>
+            </div>
+            <div className="flex flex-col justify-center relative shrink-0">
+              <p className="leading-[normal] text-nowrap">GitHub</p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col font-manrope font-normal gap-[8px] items-start leading-[0] relative shrink-0 text-[24px] text-nowrap text-white">
+            <div className="flex flex-col justify-center relative shrink-0">
+              <p className="leading-[normal] text-nowrap">jmy2134 [at] barnard [dot] edu</p>
+            </div>
+            <div className="flex flex-col justify-center relative shrink-0">
+              <a href="https://www.linkedin.com/in/jjessicaye/" target="_blank" rel="noopener noreferrer" className="leading-[normal] text-nowrap">
+                linkedin.com/in/jjessicaye
+              </a>
+            </div>
+            <div className="flex flex-col justify-center relative shrink-0">
+              <a href="https://github.com/yejessica" target="_blank" rel="noopener noreferrer" className="leading-[normal] text-nowrap">
+                github.com/yejessica
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <Footer />
