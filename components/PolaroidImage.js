@@ -11,6 +11,8 @@ import Image from 'next/image'
  * @param {string} textFont - Font family class (e.g., 'font-league-script', 'font-manrope')
  * @param {string} textColor - Text color (e.g., '#114a70', 'text-[#114a70]')
  * @param {number} size - Base size in pixels (default: 343). All dimensions scale proportionally
+ * @param {number} fontSize - Font size in pixels (default: scales with size). Overrides calculated font size
+ * @param {number} gap - Gap in pixels between image and text (default: scales with size). Overrides calculated gap
  * @param {number} lineHeight - Line height in pixels (default: scales with size). Prevents text from overlapping image
  * @param {number} rotation - Rotation angle in degrees (default: 2)
  * @param {string} className - Additional CSS classes
@@ -22,6 +24,8 @@ export default function PolaroidImage({
   textFont = 'font-league-script',
   textColor = '#114a70',
   size = 343,
+  fontSize,
+  gap,
   lineHeight,
   rotation = 2,
   className = ''
@@ -43,8 +47,8 @@ export default function PolaroidImage({
   const padding = Math.round(12 * scale)
   // Image size is determined by card width minus padding (always square)
   const imageSize = cardWidth - (2 * padding)
-  const textSize = Math.round(56 * scale)
-  const gap = Math.round(30 * scale)
+  const textSize = fontSize !== undefined ? fontSize : Math.round(56 * scale)
+  const gapValue = gap !== undefined ? gap : Math.round(30 * scale)
   const borderRadius = Math.round(20 * scale)
   const imageBorderRadius = Math.round(16 * scale)
   // Use provided lineHeight or default to scaled value
@@ -95,7 +99,7 @@ export default function PolaroidImage({
           className="flex flex-col justify-center items-center flex-grow"
           style={{
             minHeight: 0,
-            marginTop: `${gap}px`
+            marginTop: `${gapValue}px`
           }}
         >
           <div 

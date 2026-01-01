@@ -282,15 +282,17 @@ export default function Home() {
           </div>
           <div className="content-stretch flex flex-col font-manrope font-normal gap-[8px] items-start leading-[0] relative shrink-0 text-[16px] text-nowrap text-white">
             <div className="flex flex-col justify-center relative shrink-0">
-              <p className="leading-[normal] text-nowrap">jmy2134 [at] barnard [dot] edu</p>
+              <a href="mailto:jmy2134@barnard.edu" className="leading-[normal] text-nowrap transition-transform duration-200 hover:translate-x-1">
+                jmy2134 [at] barnard [dot] edu
+              </a>
             </div>
             <div className="flex flex-col justify-center relative shrink-0">
-              <a href="https://www.linkedin.com/in/jjessicaye/" target="_blank" rel="noopener noreferrer" className="leading-[normal] text-nowrap">
+              <a href="https://www.linkedin.com/in/jjessicaye/" target="_blank" rel="noopener noreferrer" className="leading-[normal] text-nowrap transition-transform duration-200 hover:translate-x-1">
                 linkedin.com/in/jjessicaye
               </a>
             </div>
             <div className="flex flex-col justify-center relative shrink-0">
-              <a href="https://github.com/yejessica" target="_blank" rel="noopener noreferrer" className="leading-[normal] text-nowrap">
+              <a href="https://github.com/yejessica" target="_blank" rel="noopener noreferrer" className="leading-[normal] text-nowrap transition-transform duration-200 hover:translate-x-1">
                 github.com/yejessica
               </a>
             </div>
