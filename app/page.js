@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ExperienceSection from '@/components/ExperienceSection'
@@ -14,7 +15,7 @@ export default function Home() {
         {/* Introduction Section */}
         <div className="content-stretch flex items-center px-[50px] py-[100px] relative shrink-0 w-full">
           <div className="flex flex-col font-manrope font-normal justify-center leading-[24px] relative shrink-0 text-[#195b87] text-[16px] w-[835px]">
-            <p className="mb-0">Hi! I&apos;m Jessica.</p>
+            <p className="mb-0 font-editorial-new text-[40px] ">Hi! I&apos;m Jessica.</p>
             <p className="mb-0">&nbsp;</p>
             <p className="mb-0">I study Computer Science & Sociology at Barnard College, Columbia University. I&apos;m exploring new ways people can interact with AI, experimenting across software and hardware, and creating tools that encourage learning, creativity, and connection.</p>
             <p className="mb-0">&nbsp;</p>
@@ -22,18 +23,103 @@ export default function Home() {
           </div>
           
           {/* Profile Image Card */}
-          <div className="basis-0 grow h-[330px] min-h-px min-w-px relative shrink-0">
-            <div className="absolute flex h-[431.254px] items-center justify-center left-[61.53px] top-[-50.17px] w-[357.685px]">
-              <PolaroidImage
-                imageSrc="/img/test.jpg"
-                imageAlt="Jessica Ye"
-                text="Jessica Ye"
-                textFont="font-league-script"
-                textColor="#114a70"
-                size={343}
-                lineHeight={50}
-                rotation={2}
-              />
+          <div className="basis-0 grow h-[425px] min-h-px min-w-px relative shrink-0 flex justify-center items-center">
+            <div className="relative flex items-center justify-center w-[357.685px] h-[431.254px]">
+              <div className="absolute inset-0 flex items-center justify-center z-10" style={{ transform: 'translateX(-40.5%)' }}>
+                <div 
+                  className="transition-transform duration-300 ease-in-out"
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'rotate(4deg)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'rotate(2deg)';
+                  }}
+                  style={{ transform: 'rotate(2deg)' }}
+                >
+                  <PolaroidImage
+                    imageSrc="/img/jessica.jpg"
+                    imageAlt="Jessica Ye"
+                    text="Jessica Ye"
+                    textFont="font-league-script"
+                    textColor="#114a70"
+                    size={343}
+                    lineHeight={50}
+                    rotation={0}
+                    gap={15}
+                  />
+                </div>
+                <div className="absolute top-0 left-1/2" style={{ zIndex: 15, transform: 'translate(-45%, -30%) rotate(2deg)' }}>
+                  <Image
+                    src="/img/washitape.png"
+                    alt="Washi Tape"
+                    width={150}
+                    height={150}
+                    className="object-contain"
+                  />
+                </div>
+                <div 
+                  className="absolute bottom-0 right-0 transition-transform duration-300 ease-in-out"
+                  style={{ zIndex: 15, transform: 'translate(35%, 15%) rotate(15deg)' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translate(35%, 15%) rotate(20deg)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translate(35%, 15%) rotate(15deg)';
+                  }}
+                >
+                  <Image
+                    src="/img/flower.png"
+                    alt="Flower"
+                    width={125}
+                    height={125}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center z-0" style={{ transform: 'translateX(40.5%)' }}>
+                <div 
+                  className="transition-transform duration-300 ease-in-out"
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'rotate(-1deg)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'rotate(-3deg)';
+                  }}
+                  style={{ transform: 'rotate(-3deg)' }}
+                >
+                  <PolaroidImage
+                    imageSrc="/img/nyc.jpg"
+                    imageAlt="New York City"
+                    text="Based in NYC!"
+                    textFont="font-manrope"
+                    textColor="#114a70"
+                    size={343}
+                    lineHeight={50}
+                    rotation={0}
+                    fontSize={16}
+                    gap={0}
+          
+                  />
+                </div>
+                <div 
+                  className="absolute top-0 right-0 transition-transform duration-300 ease-in-out"
+                  style={{ zIndex: 15, transform: 'translate(35%, -25%) rotate(-20deg)' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translate(35%, -25%) rotate(0deg)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translate(35%, -25%) rotate(-3deg)';
+                  }}
+                >
+                  <Image
+                    src="/img/star.png"
+                    alt="Star"
+                    width={150}
+                    height={150}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
