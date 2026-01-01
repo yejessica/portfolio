@@ -15,9 +15,9 @@ const leagueScript = League_Script({
 
 export const metadata = {
   title: 'Jessica Ye',
-  description: 'Personal website of Jessica Ye',
+  description: 'Jessica Ye\'s personal website',
   icons: {
-    icon: '/img/logo.svg',
+    icon: '/img/iconflower.png',
   },
 }
 
