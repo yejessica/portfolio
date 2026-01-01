@@ -3,7 +3,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ExperienceSection from '@/components/ExperienceSection'
-import Image from 'next/image'
+import PolaroidImage from '@/components/PolaroidImage'
 
 export default function Home() {
   return (
@@ -25,22 +25,16 @@ export default function Home() {
           {/* Profile Image Card */}
           <div className="basis-0 grow h-[330px] min-h-px min-w-px relative shrink-0">
             <div className="absolute flex h-[431.254px] items-center justify-center left-[61.53px] top-[-50.17px] w-[357.685px]">
-              <div className="flex-none rotate-[2deg]">
-                <div className="bg-white content-stretch flex flex-col gap-[30px] h-[419.531px] items-center pb-0 pt-[12px] px-[12px] relative rounded-[20px] shadow-[0px_4px_12px_0px_rgba(0,0,0,0.25)] w-[343.252px]">
-                  <div className="relative rounded-tl-[16px] rounded-tr-[16px] shrink-0 size-[319.252px]">
-                    <Image 
-                      alt="Jessica Ye" 
-                      className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-tl-[16px] rounded-tr-[16px] size-full" 
-                      src="/img/test.jpg"
-                      width={319}
-                      height={319}
-                    />
-                  </div>
-                  <div className="flex flex-col font-league-script justify-center leading-[0] not-italic relative shrink-0 text-[#114a70] text-[64px] text-center text-nowrap">
-                    <p className="leading-[35px]">Jessica Ye</p>
-                  </div>
-                </div>
-              </div>
+              <PolaroidImage
+                imageSrc="/img/test.jpg"
+                imageAlt="Jessica Ye"
+                text="Jessica Ye"
+                textFont="font-league-script"
+                textColor="#114a70"
+                size={343}
+                lineHeight={50}
+                rotation={2}
+              />
             </div>
           </div>
         </div>
@@ -53,7 +47,7 @@ export default function Home() {
           experiences={[
             {
               company: 'Datadog',
-              companyUrl: 'https://www.datadoghq.com/',
+              companyUrl: 'https://www.datadoghq.com',
               roles: [{
                 title: 'Software Engineering Intern',
                 date: 'January 2026 - Present',
@@ -75,7 +69,7 @@ export default function Home() {
             },
             {
               company: 'Amazon',
-              companyUrl: 'https://www.amazon.com/',
+              companyUrl: 'https://www.amazon.com',
               roles: [{
                 title: 'Software Engineering Intern',
                 date: 'May 2025 - August 2025',
@@ -87,7 +81,7 @@ export default function Home() {
             },
             {
               company: 'July',
-              companyUrl: 'https://withjuly.com/',
+              companyUrl: 'https://withjuly.com',
               roles: [{
                 title: 'Sales & Product Intern',
                 date: 'September 2024 - May 2025',
@@ -96,7 +90,7 @@ export default function Home() {
             },
             {
               company: ['Columbia International', 'Research Institute'],
-              companyUrl: 'https://iri.columbia.edu/',
+              companyUrl: 'https://iri.columbia.edu',
               roles: [{
                 title: 'Research Intern',
                 date: 'September 2024 - May 2025',
@@ -105,7 +99,7 @@ export default function Home() {
             },
             {
               company: 'Laansu Incorporated',
-              companyUrl: 'https://laansu.com/',
+              companyUrl: 'https://laansu.com',
               roles: [{
                 title: 'Software Engineering Intern',
                 date: 'June 2023 - August 2023',
@@ -124,7 +118,7 @@ export default function Home() {
           experiences={[
             {
               company: 'Climate Cardinals',
-              companyUrl: 'https://www.climatecardinals.org/',
+              companyUrl: 'https://www.climatecardinals.org',
               roles: [{
                 title: 'Director of Finance',
                 date: 'June 2023 - Present',
@@ -136,7 +130,7 @@ export default function Home() {
             },
             {
               company: 'Anthropic',
-              companyUrl: 'https://www.anthropic.com/',
+              companyUrl: 'https://www.anthropic.com',
               roles: [{
                 title: 'Columbia Claude Ambassador',
                 date: 'September 2025 - Present',
@@ -145,7 +139,7 @@ export default function Home() {
             },
             {
               company: 'Columbia Votes',
-              companyUrl: 'https://www.columbiavotes.org/',
+              companyUrl: 'https://www.columbiavotes.org',
               roles: [
                 {
                   title: 'Senior Advisor',
@@ -161,7 +155,7 @@ export default function Home() {
             },
             {
               company: ['Columbia POLIS', 'Pre-Gov Society'],
-              companyUrl: 'https://www.columbiapolis.com/',
+              companyUrl: 'https://www.columbiapolis.com',
               roles: [
                 {
                   title: 'VP of Professional Development',
