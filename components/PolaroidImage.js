@@ -43,7 +43,7 @@ export default function PolaroidImage({
   const padding = Math.round(12 * scale)
   // Image size is determined by card width minus padding (always square)
   const imageSize = cardWidth - (2 * padding)
-  const textSize = Math.round(64 * scale)
+  const textSize = Math.round(56 * scale)
   const gap = Math.round(30 * scale)
   const borderRadius = Math.round(20 * scale)
   const imageBorderRadius = Math.round(16 * scale)

@@ -8,18 +8,17 @@ import PolaroidImage from '@/components/PolaroidImage'
 export default function Home() {
   return (
     <div className="bg-[#fbfbfc] content-stretch flex flex-col items-start relative size-full">
+      <Navbar />
       {/* Top Section with Gradient Background */}
       <div className="bg-gradient-to-b content-stretch flex flex-col from-[#fbfbfc] gap-[36px] items-end justify-center overflow-clip p-[30px] relative shrink-0 to-[#d3e6f2] w-full">
-        <Navbar />
-        
         {/* Introduction Section */}
         <div className="content-stretch flex items-center px-[50px] py-[100px] relative shrink-0 w-full">
-          <div className="flex flex-col font-manrope font-normal justify-center leading-[35px] relative shrink-0 text-[#195b87] text-[24px] w-[835px]">
+          <div className="flex flex-col font-manrope font-normal justify-center leading-[24px] relative shrink-0 text-[#195b87] text-[16px] w-[835px]">
             <p className="mb-0">Hi! I&apos;m Jessica.</p>
             <p className="mb-0">&nbsp;</p>
             <p className="mb-0">I study Computer Science & Sociology at Barnard College, Columbia University. I&apos;m exploring new ways people can interact with AI, experimenting across software and hardware, and creating tools that encourage learning, creativity, and connection.</p>
             <p className="mb-0">&nbsp;</p>
-            <p>Currently: software engineering at Datadog, previously at Amazon Devices.</p>
+            <p>Currently: Software engineering at Datadog, previously at Amazon Devices.</p>
           </div>
           
           {/* Profile Image Card */}
@@ -62,8 +61,7 @@ export default function Home() {
                 date: 'September 2024 - Present',
                 description: [
                   'Engaging students in interdisplinary computation with workshops and office hours',
-                  '↳ Classes: Computational Neuroscience, Environmental Science Senior Seminar,',
-                  'Surveillance'
+                  '↳ Classes: Computational Neuroscience, Environmental Science Senior Seminar, Surveillance',
                 ]
               }]
             },
@@ -161,8 +159,7 @@ export default function Home() {
                   title: 'VP of Professional Development',
                   date: 'January 2025 - December 2025',
                   description: [
-                    'Leading professional development programming to Columbia students',
-                    'passionate about careers in government'
+                    'Leading professional development programming for Columbia students passionate about careers in government',
                   ]
                 },
                 {
@@ -178,13 +175,15 @@ export default function Home() {
 
       {/* Contact Section */}
       <div className="bg-[#3d7ba4] content-stretch flex items-center justify-between overflow-clip px-[80px] py-[50px] relative shrink-0 w-full" id="contact">
-        <div className="content-stretch flex flex-col items-center justify-center relative shrink-0">
-          <div className="flex flex-col font-league-script justify-center leading-[0] not-italic relative shrink-0 text-[160px] text-white w-[890px]">
-            <p className="leading-[normal]">Contact</p>
-          </div>
-        </div>
+      <div className="relative flex items-center justify-center">
+        <p className="font-league-script text-[152px] leading-none text-white not-italic relative top-[25px]">
+          Contact
+        </p>
+      </div>
+
+
         <div className="content-stretch flex gap-[20px] items-start relative shrink-0">
-          <div className="content-stretch flex flex-col font-manrope font-extrabold gap-[8px] items-end justify-end leading-[0] relative shrink-0 text-[24px] text-nowrap text-white uppercase">
+          <div className="content-stretch flex flex-col font-manrope font-extrabold gap-[8px] items-end justify-end leading-[0] relative shrink-0 text-[16px] text-nowrap text-white uppercase">
             <div className="flex flex-col justify-center relative shrink-0">
               <p className="leading-[normal] text-nowrap">Email</p>
             </div>
@@ -195,7 +194,7 @@ export default function Home() {
               <p className="leading-[normal] text-nowrap">GitHub</p>
             </div>
           </div>
-          <div className="content-stretch flex flex-col font-manrope font-normal gap-[8px] items-start leading-[0] relative shrink-0 text-[24px] text-nowrap text-white">
+          <div className="content-stretch flex flex-col font-manrope font-normal gap-[8px] items-start leading-[0] relative shrink-0 text-[16px] text-nowrap text-white">
             <div className="flex flex-col justify-center relative shrink-0">
               <p className="leading-[normal] text-nowrap">jmy2134 [at] barnard [dot] edu</p>
             </div>
