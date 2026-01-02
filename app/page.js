@@ -13,7 +13,7 @@ export default function Home() {
       {/* Top Section with Gradient Background */}
       <div className="bg-gradient-to-b content-stretch flex flex-col from-[#fbfbfc] gap-[36px] items-end justify-center overflow-clip p-[30px] relative shrink-0 to-[#d3e6f2] w-full">
         {/* Introduction Section */}
-        <div className="content-stretch flex flex-col md:flex-row items-start md:items-center gap-[40px] px-[30px] md:px-[50px] py-[30px] md:py-[100px] relative shrink-0 w-full">
+        <div className="content-stretch flex flex-col md:flex-row items-start md:items-center gap-[40px] px-[0px] md:px-[50px] py-[30px] md:py-[100px] relative shrink-0 w-full">
           <div className="flex flex-col font-manrope font-normal justify-center leading-[24px] relative shrink-0 text-[#195b87] text-[16px] w-full md:w-[835px]">
             <p className="mb-0 font-editorial-new text-[32px] md:text-[40px]">Hi! I&apos;m Jessica.</p>
             <p className="mb-0">&nbsp;</p>
