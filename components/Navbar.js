@@ -179,7 +179,7 @@ export default function Navbar() {
   }
   
   return (
-    <div className="fixed top-[30px] right-[30px] z-50">
+    <div className="sticky top-0 md:fixed md:top-[30px] md:right-[30px] z-50 w-full md:w-auto pt-[30px] md:pt-0 flex justify-center md:justify-end px-[30px] md:px-0">
       <div 
         ref={containerRef}
         className="backdrop-blur-[25px] backdrop-filter bg-[rgba(211,230,242,0.5)] border border-[rgba(245,245,245,0.2)] border-solid flex gap-[5px] items-center justify-center overflow-hidden p-[10px] relative rounded-[50px] shadow-[0px_4px_30px_0px_rgba(0,0,0,0.08)] w-[475px]"
@@ -218,7 +218,7 @@ export default function Navbar() {
           ref={homeRef}
           href="/" 
           onClick={(e) => handleNavClick(e, 'home')}
-          className="basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[10px] relative rounded-[50px] shrink-0 border border-transparent z-10"
+          className="basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[3px] md:py-[5px] relative rounded-[50px] shrink-0 border border-transparent z-10"
         >
           <div className="flex flex-col font-manrope font-normal justify-center leading-[0] relative shrink-0 text-[#61849c] text-[16px] text-center text-nowrap">
             <p className="leading-[35px]">Home</p>
@@ -228,7 +228,7 @@ export default function Navbar() {
           ref={experienceRef}
           href="/#experience" 
           onClick={(e) => handleNavClick(e, 'experience')}
-          className="basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[10px] relative rounded-[50px] shrink-0 border border-transparent z-10"
+          className="basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[3px] md:py-[5px] relative rounded-[50px] shrink-0 border border-transparent z-10"
         >
           <div className="flex flex-col font-manrope font-normal justify-center leading-[0] relative shrink-0 text-[#61849c] text-[16px] text-center text-nowrap">
             <p className="leading-[35px]">Experience</p>
@@ -238,7 +238,7 @@ export default function Navbar() {
           ref={contactRef}
           href="/#contact" 
           onClick={(e) => handleNavClick(e, 'contact')}
-          className="basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[10px] relative rounded-[50px] shrink-0 border border-transparent z-10"
+          className="basis-0 flex grow items-center justify-center min-h-px min-w-px overflow-clip px-[30px] py-[3px] md:py-[5px] relative rounded-[50px] shrink-0 border border-transparent z-10"
         >
           <div className="flex flex-col font-manrope font-normal justify-center leading-[0] relative shrink-0 text-[#61849c] text-[16px] text-center text-nowrap">
             <p className="leading-[35px]">Contact</p>
