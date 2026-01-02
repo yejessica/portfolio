@@ -5,11 +5,13 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ExperienceSection from '@/components/ExperienceSection'
 import PolaroidImage from '@/components/PolaroidImage'
+import ResumeButton from '@/components/ResumeButton'
 
 export default function Home() {
   return (
     <div className="bg-[#fbfbfc] content-stretch flex flex-col items-start relative size-full">
       <Navbar />
+      {/* <ResumeButton /> */}
       {/* Top Section with Gradient Background */}
       <div className="bg-gradient-to-b content-stretch flex flex-col from-[#fbfbfc] gap-[36px] items-end justify-center overflow-clip p-[30px] relative shrink-0 to-[#d3e6f2] w-full">
         {/* Introduction Section */}
