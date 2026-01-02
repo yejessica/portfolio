@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter, Manrope, League_Script } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 
 const inter = Inter({ subsets: ['latin'] })
 const manrope = Manrope({ 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} ${manrope.variable} ${leagueScript.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
