@@ -13,9 +13,9 @@ export default function Home() {
       {/* Top Section with Gradient Background */}
       <div className="bg-gradient-to-b content-stretch flex flex-col from-[#fbfbfc] gap-[36px] items-end justify-center overflow-clip p-[30px] relative shrink-0 to-[#d3e6f2] w-full">
         {/* Introduction Section */}
-        <div className="content-stretch flex items-center px-[50px] py-[100px] relative shrink-0 w-full">
-          <div className="flex flex-col font-manrope font-normal justify-center leading-[24px] relative shrink-0 text-[#195b87] text-[16px] w-[835px]">
-            <p className="mb-0 font-editorial-new text-[40px] ">Hi! I&apos;m Jessica.</p>
+        <div className="content-stretch flex flex-col md:flex-row items-start md:items-center gap-[40px] px-[30px] md:px-[50px] py-[30px] md:py-[100px] relative shrink-0 w-full">
+          <div className="flex flex-col font-manrope font-normal justify-center leading-[24px] relative shrink-0 text-[#195b87] text-[16px] w-full md:w-[835px]">
+            <p className="mb-0 font-editorial-new text-[32px] md:text-[40px]">Hi! I&apos;m Jessica.</p>
             <p className="mb-0">&nbsp;</p>
             <p className="mb-0">I study Computer Science & Sociology at Barnard College, Columbia University. I&apos;m exploring new ways people can interact with AI, experimenting across software and hardware, and creating tools that encourage learning, creativity, and connection.</p>
             <p className="mb-0">&nbsp;</p>
@@ -23,101 +23,93 @@ export default function Home() {
           </div>
           
           {/* Profile Image Card */}
-          <div className="basis-0 grow h-[425px] min-h-px min-w-px relative shrink-0 flex justify-center items-center">
-            <div className="relative flex items-center justify-center w-[357.685px] h-[431.254px]">
-              <div className="absolute inset-0 flex items-center justify-center z-10" style={{ transform: 'translateX(-40.5%)' }}>
-                <div 
-                  className="transition-transform duration-300 ease-in-out"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'rotate(4deg)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'rotate(2deg)';
-                  }}
-                  style={{ transform: 'rotate(2deg)' }}
-                >
-                  <PolaroidImage
-                    imageSrc="/img/jessica.jpg"
-                    imageAlt="Jessica Ye"
-                    text="Jessica Ye"
-                    textFont="font-league-script"
-                    textColor="#114a70"
-                    size={343}
-                    lineHeight={50}
-                    rotation={0}
-                    gap={15}
-                  />
-                </div>
-                <div className="absolute top-0 left-1/2" style={{ zIndex: 15, transform: 'translate(-45%, -30%) rotate(2deg)' }}>
-                  <Image
-                    src="/img/washitape.png"
-                    alt="Washi Tape"
-                    width={150}
-                    height={150}
-                    className="object-contain"
-                  />
-                </div>
-                <div 
-                  className="absolute bottom-0 right-0 transition-transform duration-300 ease-in-out"
-                  style={{ zIndex: 15, transform: 'translate(35%, 15%) rotate(15deg)' }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translate(35%, 15%) rotate(20deg)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translate(35%, 15%) rotate(15deg)';
-                  }}
-                >
-                  <Image
-                    src="/img/flower.png"
-                    alt="Flower"
-                    width={125}
-                    height={125}
-                    className="object-contain"
-                  />
+        <div className="basis-auto grow-0 md:basis-0 md:grow relative shrink-0 flex justify-center items-center w-full md:w-auto">
+          <div className="relative flex items-center justify-center w-[208.409px] h-[251.275px] md:w-[357.685px] md:h-[431.254px]">
+              <div className="absolute inset-0 flex items-center justify-center z-10 polaroid-group-left" style={{ transform: 'translateX(-40.5%) scale(0.58)', transformOrigin: 'center' }}>
+                <div className="w-full h-full flex items-center justify-center">
+                  <div 
+                    className="transition-transform duration-300 ease-in-out"
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'rotate(4deg)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'rotate(2deg)';
+                    }}
+                    style={{ transform: 'rotate(2deg)' }}
+                  >
+                    <PolaroidImage
+                      imageSrc="/img/jessica.jpg"
+                      imageAlt="Jessica Ye"
+                      text="Jessica Ye"
+                      textFont="font-league-script"
+                      textColor="#114a70"
+                      size={343}
+                      lineHeight={50}
+                      rotation={0}
+                      gap={15}
+                    />
+                  </div>
+                  <div className="absolute top-0 left-1/2 washi-tape-mobile washi-tape-desktop" style={{ zIndex: 15 }}>
+                    <Image
+                      src="/img/washitape.png"
+                      alt="Washi Tape"
+                      width={150}
+                      height={150}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div 
+                    className="absolute bottom-0 right-0 transition-transform duration-300 ease-in-out flower-mobile flower-desktop"
+                    style={{ zIndex: 15 }}
+                  >
+                    <Image
+                      src="/img/flower.png"
+                      alt="Flower"
+                      width={125}
+                      height={125}
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="absolute inset-0 flex items-center justify-center z-0" style={{ transform: 'translateX(40.5%)' }}>
-                <div 
-                  className="transition-transform duration-300 ease-in-out"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'rotate(-1deg)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'rotate(-3deg)';
-                  }}
-                  style={{ transform: 'rotate(-3deg)' }}
-                >
-                  <PolaroidImage
-                    imageSrc="/img/nyc.jpg"
-                    imageAlt="New York City"
-                    text="Based in NYC!"
-                    textFont="font-manrope"
-                    textColor="#114a70"
-                    size={343}
-                    lineHeight={50}
-                    rotation={0}
-                    fontSize={16}
-                    gap={0}
-          
-                  />
-                </div>
-                <div 
-                  className="absolute top-0 right-0 transition-transform duration-300 ease-in-out"
-                  style={{ zIndex: 15, transform: 'translate(35%, -25%) rotate(-20deg)' }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translate(35%, -25%) rotate(0deg)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translate(35%, -25%) rotate(-3deg)';
-                  }}
-                >
-                  <Image
-                    src="/img/star.png"
-                    alt="Star"
-                    width={150}
-                    height={150}
-                    className="object-contain"
-                  />
+              <div className="absolute inset-0 flex items-center justify-center z-0 polaroid-group-right" style={{ transform: 'translateX(40.5%) scale(0.58)', transformOrigin: 'center' }}>
+                <div className="w-full h-full flex items-center justify-center">
+                  <div 
+                    className="transition-transform duration-300 ease-in-out"
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'rotate(-1deg)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'rotate(-3deg)';
+                    }}
+                    style={{ transform: 'rotate(-3deg)' }}
+                  >
+                    <PolaroidImage
+                      imageSrc="/img/nyc.jpg"
+                      imageAlt="New York City"
+                      text="Based in NYC!"
+                      textFont="font-manrope"
+                      textColor="#114a70"
+                      size={343}
+                      lineHeight={50}
+                      rotation={0}
+                      fontSize={16}
+                      gap={0}
+            
+                    />
+                  </div>
+                  <div 
+                    className="absolute top-0 right-0 transition-transform duration-300 ease-in-out star-mobile star-desktop"
+                    style={{ zIndex: 15 }}
+                  >
+                    <Image
+                      src="/img/star.png"
+                      alt="Star"
+                      width={150}
+                      height={150}
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -126,7 +118,7 @@ export default function Home() {
       </div>
 
       {/* Experience Section */}
-      <div className="content-stretch flex flex-col gap-[30px] items-start overflow-clip px-[80px] py-[50px] relative shrink-0 w-full" id="experience">
+      <div className="content-stretch flex flex-col gap-[30px] items-start overflow-clip px-[30px] md:px-[80px] py-[30px] md:py-[50px] relative shrink-0 w-full" id="experience">
         <ExperienceSection
           title="Work Experience"
           experiences={[
@@ -177,7 +169,7 @@ export default function Home() {
               companyUrl: 'https://iri.columbia.edu',
               roles: [{
                 title: 'Research Intern',
-                date: 'September 2024 - May 2025',
+                date: 'September 2023 - May 2024',
                 description: 'Understanding area yield data for better weather insurance schema'
               }]
             },
@@ -260,15 +252,14 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <div className="bg-[#3d7ba4] content-stretch flex items-center justify-between overflow-clip px-[80px] py-[50px] relative shrink-0 w-full" id="contact">
-      <div className="relative flex items-center justify-center">
-        <p className="font-league-script text-[152px] leading-none text-white not-italic relative top-[25px]">
-          Contact
-        </p>
-      </div>
+      <div className="bg-[#3d7ba4] content-stretch flex flex-col md:flex-row md:items-center md:justify-between gap-[30px] overflow-clip px-[30px] md:px-[80px] py-[30px] md:py-[50px] relative shrink-0 w-full" id="contact">
+        <div className="relative flex items-center justify-center">
+          <p className="font-league-script text-[80px] md:text-[152px] leading-none text-white not-italic relative top-[25px] md:top-[25px]">
+            Contact
+          </p>
+        </div>
 
-
-        <div className="content-stretch flex gap-[20px] items-start relative shrink-0">
+        <div className="content-stretch flex gap-[20px] items-start justify-center md:justify-start relative shrink-0 mx-auto md:mx-0">
           <div className="content-stretch flex flex-col font-manrope font-extrabold gap-[8px] items-end justify-end leading-[0] relative shrink-0 text-[16px] text-nowrap text-white uppercase">
             <div className="flex flex-col justify-center relative shrink-0">
               <p className="leading-[normal] text-nowrap">Email</p>
@@ -280,19 +271,19 @@ export default function Home() {
               <p className="leading-[normal] text-nowrap">GitHub</p>
             </div>
           </div>
-          <div className="content-stretch flex flex-col font-manrope font-normal gap-[8px] items-start leading-[0] relative shrink-0 text-[16px] text-nowrap text-white">
+          <div className="content-stretch flex flex-col font-manrope font-normal gap-[8px] items-start leading-[0] relative shrink-0 text-[16px] md:text-nowrap text-white">
             <div className="flex flex-col justify-center relative shrink-0">
-              <a href="mailto:jmy2134@barnard.edu" className="leading-[normal] text-nowrap transition-transform duration-200 hover:translate-x-1">
+              <a href="mailto:jmy2134@barnard.edu" className="leading-[normal] md:text-nowrap transition-transform duration-200 hover:translate-x-1">
                 jmy2134 [at] barnard [dot] edu
               </a>
             </div>
             <div className="flex flex-col justify-center relative shrink-0">
-              <a href="https://www.linkedin.com/in/jjessicaye/" target="_blank" rel="noopener noreferrer" className="leading-[normal] text-nowrap transition-transform duration-200 hover:translate-x-1">
+              <a href="https://www.linkedin.com/in/jjessicaye/" target="_blank" rel="noopener noreferrer" className="leading-[normal] md:text-nowrap transition-transform duration-200 hover:translate-x-1">
                 linkedin.com/in/jjessicaye
               </a>
             </div>
             <div className="flex flex-col justify-center relative shrink-0">
-              <a href="https://github.com/yejessica" target="_blank" rel="noopener noreferrer" className="leading-[normal] text-nowrap transition-transform duration-200 hover:translate-x-1">
+              <a href="https://github.com/yejessica" target="_blank" rel="noopener noreferrer" className="leading-[normal] md:text-nowrap transition-transform duration-200 hover:translate-x-1">
                 github.com/yejessica
               </a>
             </div>

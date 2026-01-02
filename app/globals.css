@@ -73,3 +73,51 @@
   src: url(/fonts/pp_editorial_new/PPEditorialNew-UltraboldItalic.otf) format('opentype');
 }
 
+/* Polaroid image group responsive scaling */
+@media (min-width: 768px) {
+  .polaroid-group-left {
+    transform: translateX(-40.5%) scale(1) !important;
+  }
+  .polaroid-group-right {
+    transform: translateX(40.5%) scale(1) !important;
+  }
+}
+
+/* Mobile-specific positioning for decorative images */
+/* Since everything scales together, we can use the same percentage values */
+@media (max-width: 767px) {
+  .washi-tape-mobile {
+    transform: translate(-45%, -170%) rotate(2deg) !important;
+  }
+  .flower-mobile {
+    transform: translate(90%, 150%) rotate(10deg) !important;
+  }
+  .flower-mobile:hover {
+    transform: translate(90%, 150%) rotate(20deg) !important;
+  }
+  .star-mobile {
+    transform: translate(80%, -135%) rotate(-10deg) !important;
+  }
+  .star-mobile:hover {
+    transform: translate(80%, -135%) rotate(0deg) !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .washi-tape-desktop {
+    transform: translate(-45%, -30%) rotate(2deg) !important;
+  }
+  .flower-desktop {
+    transform: translate(35%, 15%) rotate(10deg) !important;
+  }
+  .flower-desktop:hover {
+    transform: translate(35%, 15%) rotate(20deg) !important;
+  }
+  .star-desktop {
+    transform: translate(35%, -25%) rotate(-10deg) !important;
+  }
+  .star-desktop:hover {
+    transform: translate(35%, -25%) rotate(0deg) !important;
+  }
+}
+
